@@ -1,0 +1,179 @@
+.NetArt{
+  width: 1519px;
+  padding: 2%;
+  height: auto;
+  background: linear-gradient(rgb(255, 255, 255) 10%, rgb(240, 240, 144));
+  transition: 0.3s;
+  display: grid;
+  grid-template-areas:
+  "side content content "
+  "footer footer footer "
+  "footer footer footer "
+  "footer footer footer ";
+  grid-template-columns: repeat(3,1fr);
+  padding: 0;
+  padding-top: 1%;
+}
+
+@media screen and (max-width:800px) {
+  .NetArt{
+    grid-template-areas:
+  "content content content "
+  "gap side side"
+  "footer footer footer ";
+  height: auto;
+  background: linear-gradient(rgb(255, 255, 255) 10%, rgb(241, 241, 152));
+  padding-left:4% ;
+  font-size: 150%;
+  }
+
+  .NetArt .heading{
+    font-size: 150%;
+  }
+  .aside{
+    text-align: center;
+  }
+  .aside .award-img{
+    width: 40%;
+    display: block;
+    float: none;
+    margin-top: 0;
+  }
+
+  .NetArt .footer{
+    display: block;
+    margin: 0%;
+    padding-left: 0;
+  }
+}
+
+.award-img{
+  float: left;
+  margin: 0;
+  margin-top: 20%;
+  width: 100%;
+  height: auto;
+  /* filter: drop-shadow(1px 0px 10px rgb(49, 2, 2)) ; */
+}
+.gap{
+  grid-area: gap;
+}
+.aside{
+  grid-area: side;
+  grid-column: 1 / span 1.5;
+  /* background-color: red; */
+  height: 80%;
+}
+.content{
+  display:block;
+  margin: 0;
+  grid-area: content;
+  grid-column: 1.6 / span 4;
+  text-align: left;
+  width: 95%;
+  font-weight: bold;
+  /* background-color: blueviolet; */
+  height:80%;
+}
+
+.content .logo{
+  display: flex;
+  width: 60%;
+  height: auto;
+}
+.heading{
+  display: flex;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.award{
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+
+.footer{
+  grid-area: footer;
+  font-weight: bold;
+  text-align: left;
+  padding: 3%;
+  /* margin-top: -12%; */
+  /* background-color: aqua; */
+}
+
+.pipes img{
+  width: 100%;
+  margin-top: 1%;
+}
+
+.pipes .label{
+  display: flex;
+  justify-content: center;
+}
+.pipes{
+  padding-bottom: 4%;
+  border-bottom: 3px solid red;
+}
+
+.details head{
+  padding-top: 2%;
+  display: flex;
+  font-weight: bolder;
+  justify-content: center;
+}
+.details p{
+  /* display: flex; */
+  justify-content: center;
+  text-align: center;
+  font-size:18px ;
+}
+.details label{
+  color: red;
+}
+
+.contact{
+  background-color: rgb(255, 53, 53);
+  color: aliceblue;
+  padding: 3% 1%;
+  margin: 0;
+  width: 100%;
+  display:grid;
+  justify-content: space-around;
+  padding-bottom: 7%;
+
+}
+.contact label{
+  padding-left: 2%;
+}
+.call img{
+  width: 15%;
+  height: auto;
+  padding-left: 5%;
+}
+
+.call{
+  font-weight: lighter;
+  grid-row: 1;
+  grid-column: 2 / span 3;
+}
+
+.facebook{
+  display: inline;
+  grid-row: 1;
+  grid-column:7 / span 12;
+}
+.facebook img{
+  width: 12%;
+  height: auto;
+}
+
+
+.web{
+  grid-row: 1;
+  grid-column: 19;
+}
+.web img{
+  width: 12%;
+  height: auto;
+}
